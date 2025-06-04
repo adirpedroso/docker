@@ -1,0 +1,1 @@
+docker run -it --name holoocean --privileged --ipc=host --gpus all --runtime=nvidia -v /tmp/.X11-unix:/tmp/.X11-unix -v $PWD:/tmp/shared -v /home/junao99/apjr_lib/jr_holoocean:/home/apjr_lib/jr_holoocean -e DISPLAY=$DISPLAY -e NVIDIA_VISIBLE_DEVICES=all -e NVIDIA_DRIVER_CAPABILITIES=compute,graphics,utility -e QT_X11_NO_MITSHM=1 img_holoocean:v1
